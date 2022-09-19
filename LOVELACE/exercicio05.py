@@ -9,12 +9,12 @@ from time import sleep
 
 poli = "="*20
 
-sleep(0.0001)
+sleep(2)
 print(f"\n {poli} CABECALHO {poli} \n")
 
-for cont in range(50000, 0, -1):
+for cont in range(20, 0, -1):
     print(cont)
-    sleep(0.0001)
+    sleep(2)
 
 print("Feliz dia do programador!")
 
