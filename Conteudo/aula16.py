@@ -2,7 +2,7 @@ poli = "*"*20
 
 print(f"\n {poli} CABEÇALHO {poli} \n")
 
-for c in range(0, 23, 2):
+for c in range(0, 23, 1):
     print(c)
 
 

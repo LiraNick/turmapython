@@ -12,8 +12,8 @@ poli = "="*20
 sleep(2)
 print(f"\n {poli} CABECALHO {poli} \n")
 
-for cont in range(20, 0, -1):
-    print(cont)
+for cont int range(20, 0, -1):
+    print()
     sleep(2)
 
 print("Feliz dia do programador!")
