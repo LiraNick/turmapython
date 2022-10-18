@@ -31,3 +31,8 @@ print("potencia: ", potencia)
 print("divisao inteiros:", diviint)
 
 
+print(("="*5), "calculadora", ("="*5))
+
+nome = str(input("digite seu nome: "))
+sobrenome = str(input("digite sua sobrenome: "))
+idade = int(input("digite seu idade: "))
