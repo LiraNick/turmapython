@@ -3,7 +3,7 @@ from controller import salvar, listar
 def menu():
     print("="*20, "menu", "="*20)
 
-    conde = "sim"
+    cond = "sim"
     while cond == "sim":
         nome = salvar
         var = str(input("deseja continuar \n sim \n não \n :>"))
