@@ -10,5 +10,5 @@ def multiplicacao(n1,n2):
 def divisao(n1,n2):
     return(n1/n2)
 
-def SomaSalario(n1, n2, n3, n4):
-    return(n1 + n2 + n3 + n4)
+def soma(a, b, c, d):
+    return a + b + c + d
