@@ -6,11 +6,12 @@ conta2 = Conta(321, "lirinha", 24242424, 800, 1500.0)
 conta3 = Conta(654, "nickzera", 69696969, 300, 3200.0)
 
 print("="*30)
-print(conta1.__dict__)
+print(conta1)
 
 print("="*30)
-print(conta2.titular)
+print(conta2)
 
 print("="*30)
-print(conta3.titular)
+print(conta3)
 
+conta1.extrato()
