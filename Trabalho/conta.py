@@ -2,7 +2,7 @@ class Conta:
     __titular = ""
     __numero = 0
     __saldo = 0
-
+    
     @property #getter
     def titular(self):
         return self.__titular
@@ -22,7 +22,7 @@ class Conta:
         return self.__saldo
     @saldo.setter
     def saldo(self, saldo):
-        self.saldo = saldo
+        self.__saldo = saldo
 
     def __str__(self):
-        return f"{self.titular}; {self.numero}; {self.saldo}"
+        return f"{self.titular}; {self.numero};  {self.saldo}"
