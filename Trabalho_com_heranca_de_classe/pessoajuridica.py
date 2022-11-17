@@ -5,7 +5,7 @@ class PessoaJuridica(Conta):
         self.titular = titular
         self.cnpj = cnpj
         self.saldo_inicial = saldo_inicial
-        #print("Passando Pelo Construtor da Classe Pessoa Juridica")
+        print("Passando Pelo Construtor da Classe Pessoa Juridica")
     __segundo_titular = ""
     @property
     def segundo_titular(self):
@@ -17,3 +17,4 @@ class PessoaJuridica(Conta):
 
     def __str__(self):
         return f"{super().__str__}\nTitular:> {self.titular}\nCnpj:> {self.cnpj}\nSaldo inicial:> {self.saldo_inicial}\nSegundo titular:> {self.segundo_titular}"
+        

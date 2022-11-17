@@ -8,3 +8,4 @@ class Conta:
 
     def __str__(self):
         return f"O numero da conta é:> {self.numero}\nO tipo da conta é:> {self.tipo}\nA agencia da conta é:> {self.agencia}"
+    

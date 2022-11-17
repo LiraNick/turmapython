@@ -13,7 +13,7 @@ class PessoaFisica(Conta):
 
     @segundo_titular.setter #setter
     def segundo_titular(self, segundo_titular):
-        self.__segundo_titular = segundo_titular
+        self.__segundo_titular = segundo_titular.title()
 
     def __str__(self):
         return f"{super().__str__}\nTitular:> {self.titular}\nCpf:> {self.cpf}\nSaldo inicial:> {self.saldo_inicial}\nSegundo titular:> {self.segundo_titular}"

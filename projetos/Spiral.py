@@ -7,13 +7,13 @@ wn.bgcolor("light green")
 wn.title("Turtle")
 skk = turtle.Turtle()
 skk.color("blue")
- 
+
 def sqrfunc(size):
     for i in range(4):
         skk.fd(size)
         skk.left(90)
         size = size-5
- 
+
 sqrfunc(146)
 sqrfunc(126)
 sqrfunc(106)

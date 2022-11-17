@@ -17,3 +17,4 @@ class PessoaJuridica(Conta):
 
     def __str__(self):
         return f"{super().__str__}\nTitular:> {self.titular}\nCnpj:> {self.cnpj}\nSaldo inicial:> {self.saldo_inicial}\nSegundo titular:> {self.segundo_titular}"
+        
