@@ -22,5 +22,7 @@ def read_pj():
         pessoajuridica.saldo_inicial = conta_objeto[5]
 
         lista_contas.append(conta)
-        contas.close
-        return lista_contas
+        
+        
+    contas.close()
+    return lista_contas

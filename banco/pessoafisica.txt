@@ -1,3 +1,4 @@
 ; 0; edu; niasifda; 4888; 1000.0
 ; 0; lirinha; nicolas; 488; 1000.0
 ; 0; lirinha; nick; 488; 1000.0
+brazil; 1000; ; nicolass; 48813615892; 40000.0

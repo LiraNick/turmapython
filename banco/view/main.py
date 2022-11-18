@@ -7,11 +7,11 @@ def menu():
     menu = 1
     while(menu != 0):
         print("="*30, "Menu Principal", "="*30)
-        print("\n1.Pessoa Fisica \n2.Pessoa Juridica")
-        menu_inical = int(input("Digite o Tipo:"))
+        print("\n1.Pessoa Fisica \n2.Pessoa Juridica \n")
+        menu_inical = int(input("Digite o Tipo:> "))
         match menu_inical:
             case 1:
-                menu = int(input("1.Criar PessoaFisica:> \n2.Listar PessoasFisicas:> \n0.sair:> \n"))
+                menu = int(input("\n1.Criar PessoaFisica: \n2.Listar PessoasFisicas: \n0.sair: \nR:> "))
                 match menu:
                     case 1:
                         pessoafisica = PessoaFisica()
@@ -21,8 +21,8 @@ def menu():
                         pessoafisica.saldo_inicial = float(input("Digite o Saldo Inicial:> "))
 
                         print("Deseja Cadastrar um Segundo Titular:> \n")
-                        v=str(input('sim ou nao:> '))
-                        if v=='sim':
+                        v=str(input('Sim ou Não:> '))
+                        if v=='Sim':
                             pessoafisica.segundo_titular = str(input("Digite o Nome do 2° Titular:> "))
                         create_psf(pessoafisica)
                     case 2:
@@ -30,7 +30,7 @@ def menu():
 
 
             case 2:
-                menu = int(input("1.Criar PessoaJuridica:> \n2.Listar PessoasJuridias:> \n0.sair:> \n"))
+                menu = int(input("\n1.Criar PessoaJuridica: \n2.Listar PessoasJuridias: \n0.sair: \nR:> "))
                 match menu:
                     case 1:
                         pessoajuridica=PessoaJuridica()
@@ -40,8 +40,8 @@ def menu():
                         pessoajuridica.saldo_inicial = float(input("Digite o Saldo Inicial:> "))
 
                         print("Deseja Cadastrar um Segundo Titular:> \n")
-                        v=str(input('sim ou nao:> '))
-                        if v=='sim':
+                        v=str(input('Sim ou Não:> '))
+                        if v=='Sim':
                             pessoajuridica.segundo_titular = str(input("digite o nome do 2° titular: "))
                         create_pj(pessoajuridica)
                     case 2:
