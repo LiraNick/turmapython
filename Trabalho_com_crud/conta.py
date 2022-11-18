@@ -26,3 +26,4 @@ class Conta:
 
     def __str__(self):
         return f"{self.titular}; {self.numero};  {self.saldo}"
+        

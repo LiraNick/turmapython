@@ -22,7 +22,7 @@ def read():
         #printando objeto
         '''print(conta__objeto)'''
         #Variavel referencia objeto
-        conta = Conta()
+        conta = Conta() 
         #setter recebendo um indice
         conta.titular = conta__objeto[0]
         #setter recebendo um indice

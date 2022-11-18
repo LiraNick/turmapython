@@ -7,7 +7,6 @@ class PessoaFisica(Conta):
         self.saldo_inicial = saldo_inicial
         print("Passando Pelo Construtor da Classe Pessoa Fisica")
     __segundo_titular = ""
-    @property #getter
     def segundo_titular(self):
         return self.__segundo_titular
 

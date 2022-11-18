@@ -1,0 +1,3 @@
+; 0; edu; niasifda; 4888; 1000.0
+; 0; lirinha; nicolas; 488; 1000.0
+; 0; lirinha; nick; 488; 1000.0
