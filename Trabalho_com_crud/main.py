@@ -1,5 +1,5 @@
 from conta import Conta
-from controller import create, read
+from controller import create, read, update, delete
 
 def menu():
 
@@ -7,7 +7,7 @@ def menu():
     
     menu = 1
     while(menu != 0):
-        menu = int(input("\n1.Criar Conta: \n2.Mostrar Estatisticas da Conta: \n3.Sair: \n\nR:>"))
+        menu = int(input("\n1.Criar Conta: \n2.Mostrar Estatisticas da Conta: \n3.Update Numero: \n4.Deletar Conta: \n\nR:>"))
         match menu:
 
             case 1:
@@ -26,9 +26,13 @@ def menu():
                 for c in lista_contas:
                     print(c)
 
-            case _:
-                print("Tchau gatão")
-                break
+            case 3:
+                conta.numero = 100
+                update(conta)
+
+            case 4:
+
+                delete()
 
 
 menu()
