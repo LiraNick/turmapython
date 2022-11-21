@@ -18,49 +18,47 @@ def read():
         #Variavel recebendo funcao internalizada para retirar espacos
         conta = conta.strip()
         #Variavel recebendo funcao internalizada de condicao para o indice
-        conta__objeto = conta.split("; ")
+        conta__objeto = conta.split(";")
         #printando objeto
-        '''print(conta__objeto)'''
+        print(conta__objeto)
         #Variavel referencia objeto
-        conta = Conta() 
-        #setter recebendo um indice
-        conta.titular = conta__objeto[0]
-        #setter recebendo um indice
-        conta.numero = conta__objeto[1]
-        #setter recebendo um indice
-        conta.saldo = conta__objeto[2]
-        
-        lista_contas.append(conta)
-    contas.close
+    contas.close()
     return lista_contas
 
 def update(conta_update:Conta):
     lista_contas = []
-    contas = open("contas.txt", "r")
-    for conta in contas:
+    arquivo = open("contas.txt", "r")
+    for conta in arquivo:
         conta_limpa = conta.strip()
         conta_objeto = conta_limpa.split(";")
         if conta_update.numero == int(conta_objeto[1]):
-            lista_contas.append(str(lista_contas)+"\n")
+            lista_contas.append(conta_update)
         else:
-            lista_contas.append(Conta)
-        contas.close()
+            lista_contas.append(conta)
+    arquivo.close()    
 
-        contas = open("contas.txt", "w")
-        contas.writelines(lista_contas)
-        contas.close()
+    arquivo = open("contas.txt", "w")    
+    for con in lista_contas:
+        arquivo.write(str(con))     
+    arquivo.close()    
 
 
-def delete(numero_conta):
+
+
+def delete(conta_update:Conta):
     lista_contas = []
-    contas = open("contas.txt", "r")
-    for conta in contas:
+    arquivo = open("contas.txt", "r")
+    for conta in arquivo:
         conta_limpa = conta.strip()
         conta_objeto = conta_limpa.split(";")
-        if numero_conta !=int(conta_objeto[1]):
+        if conta_update.numero != int(conta_objeto[1]):
             lista_contas.append(conta)
-        contas.close()
+    arquivo.close()
 
-        contas = open("contas.txt", "w")
-        contas.writelines(lista_contas)
-        contas.close()
+    arquivo = open("contas.txt", "w")
+    arquivo.writelines(str(lista_contas))
+    arquivo.close()
+    arquivo = open("contas.txt", "w")    
+    for con in lista_contas:
+        arquivo.write(str(con))     
+    arquivo.close()  

@@ -7,7 +7,7 @@ def menu():
     
     menu = 1
     while(menu != 0):
-        menu = int(input("\n1.Criar Conta: \n2.Mostrar Estatisticas da Conta: \n3.Update Numero: \n4.Deletar Conta: \n\nR:>"))
+        menu = int(input("\n1.Criar Conta: \n2.Mostrar Estatisticas: \n3.Update Numero: \n4.Deletar Conta: \n\nR:>"))
         match menu:
 
             case 1:
@@ -27,12 +27,16 @@ def menu():
                     print(c)
 
             case 3:
-                conta.numero = 100
+                conta = Conta()
+                conta.numero = 500
+                conta.saldo = 800
+                conta.titular = "lirinha"
                 update(conta)
 
             case 4:
-
-                delete()
+                conta = Conta()
+                conta.numero = 500
+                delete(conta)
 
 
 menu()
